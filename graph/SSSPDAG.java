@@ -35,7 +35,7 @@ public class SSSPDAG{
         // Assuming distance between all edges is 1
         int[] distance = new int[6];
         Arrays.fill(distance, 10000);
-        distance[topo.get(0)] = 0;;
+        distance[topo.get(0)] = 0;
         for(Integer e: topo){
             for(Integer neighbour: adj[e]){
                 distance[neighbour] = Math.min(distance[neighbour], distance[e]+1);
